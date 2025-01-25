@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>因数分解ゲーム</title>
+    <title>オンラインじゃんけん対決</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <span id="a"></span>
-    <span>+</span>
-    <span id="b"></span>
-    <span>=</span>
-    <input id="answer" size="2" />
-    <button id="send">ok</button>
-    <div id="result"></div>
+
+    <header>
+        <h1>オンラインじゃんけん対決</h1>
+        <p id="searching">対戦相手を探しています・・・</p>
+        <p id="instructions">３秒以内に選んでください。</p>
+    </header>
+
+
+    <div id="choices">
+        <button id="rock">✊</button>
+        <button id="paper">🖐</button>
+        <button id="scissors">✌</button>
+    </div>
+
+
     <script src="./script.js"></script>
 </body>
 

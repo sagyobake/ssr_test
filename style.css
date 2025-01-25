@@ -1,0 +1,16 @@
+header {
+    text-align: center;
+}
+
+#instructions {
+    display: none;
+}
+
+button {
+    font-size: 3rem;
+}
+
+#choices {
+    display: none;
+    text-align: center;
+}
