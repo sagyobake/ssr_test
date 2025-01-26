@@ -1,7 +1,7 @@
 Deno.serve({ port: 3000 }, (req) => {
     console.log(req.url);
 
-    if (req.url === "http://localhost:3000/") {
+    //if (req.url === "http://localhost:3000/") {
         if (req.headers.get("upgrade") !== "websocket") {
             return new Response(null, { status: 501 });
         }
@@ -19,5 +19,5 @@ Deno.serve({ port: 3000 }, (req) => {
             socket.send("pong");
         });
         return response;
-    }
+    //}
 });

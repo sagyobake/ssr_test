@@ -1,5 +1,5 @@
 // WebSocket 接続を作成
-const socket = new WebSocket("ws://localhost:3000");
+const socket = new WebSocket("wss://websocket-ssr-test.deno.dev/");
 
 document.addEventListener("click", (e) => {
     console.log(e.target.id);
