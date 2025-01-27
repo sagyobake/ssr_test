@@ -7,7 +7,7 @@ document.addEventListener("click", (e) => {
 
 // 接続が開いたときのイベント
 socket.addEventListener("open", (event) => {
-    socket.send("ping");
+    socket.send(11);
 });
 
 // メッセージの待ち受け

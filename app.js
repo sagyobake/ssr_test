@@ -1,5 +1,5 @@
 Deno.serve({ port: 3000 }, (req) => {
-    console.log(req.url);
+    console.log(req);
 
     //if (req.url === "http://localhost:3000/") {
         if (req.headers.get("upgrade") !== "websocket") {
